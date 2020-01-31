@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  
+  <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFouklWzlIKpzwbPpgjAVfWKSh86-Gz6o&libraries=places"></script>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
+  <script defer src="script.js"></script>
+  <title>My Weather App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="icon-container">
+        <canvas id="icon" width="100" height="100"></canvas>
+      </div>
+    </div>
+    
+    <div class="content">
+    
+    <div class="city-search-container">
+        <input data-city-search type="text" class="city-search" value="Nairobi, Kenya">
+      </div>
+      
+        <div class="title"><b>Today's condition.</b> <i>(click field above and select location)</i></div>
+      <div class="general-information">
+        <div class="status" data-status>Weather App</div>
+        <div class="location" data-location>Conditions</div>
+      </div>
+      <div class="detail-section">
+        <div class="detail">
+          <div class="title">Wind</div>
+          <div class="value" data-wind>TBD</div>
+        </div>
+        <div class="detail bordered">
+            <div class="title">Temperature</div>
+          <div class="value" data-temperature>TBD</div>
+        </div>
+        <div class="detail">
+          <div class="title">Precipitation</div>
+          <div class="value" data-precipitation>TBD</div>
+        </div>
+      </div>
+      
+
+    </div>
+   
+
+    
+    <div class="content">
+        <div class="title">Daily Conditiions</div>
+      <div class="general-information">
+       <div class="status" data-status2>Daily</div>
+        <div class="location" data-location2>Daily conditions</div>
+      </div>
+
+    </div> 
+    
+    
+  </div>
+  <a href="https://darksky.net/poweredby" class="darksky-logo">Powered By Dark Sky</a>
+</body>
+</html>
